@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Cocktails</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons/css/boxicons.min.css">
+</head>
+<body onload="displayFavorites()">
+    <div class="container">
+        <div class="nav">
+            <h1>Favroites</h1>
+            <div class="navp">
+                <a href="index.html" class="fav-btn">
+                    <i class="bx bx-home"></i>
+                </a>
+                <a href="favourite.html" class="fav-btn">
+                    <i class="bx bx-heart"></i>
+                </a>
+            </div>
+        </div>
+        <div class="meal-wrapper">
+            <div id="favorite-meals" class="meal-list"></div>
+            <div class="meal-details">
+                <!-- recipe close btn -->
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                    <i class="bx bx-x"></i>
+                </button>
+                <!-- meal content -->
+                <div class="meal-details-content">
+                    <!-- Modal content will be inserted here by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
